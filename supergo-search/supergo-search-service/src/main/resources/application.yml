@@ -1,13 +1,12 @@
 server:
-  port: 8002
+  port: 8004
 spring:
   application:
-    name: supergo-manager-web
-  main:
-    allow-bean-definition-overriding: true
-  servlet:
-    multipart:
-      max-file-size: 5MB
+    name: supergo-search
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 127.0.0.1:9300
 eureka:
   client:
     service-url:

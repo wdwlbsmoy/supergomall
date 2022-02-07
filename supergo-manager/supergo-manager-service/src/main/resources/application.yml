@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: supergo-manager
+  redis:
+    host: 192.168.1.123
+    port: 6379
   datasource:
     url: jdbc:mysql://127.0.0.1:3308/supergo?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
     username: root
